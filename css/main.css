@@ -1,0 +1,403 @@
+@font-face{
+    font-family: lato;
+    src:url('../fonts/Lato-Black.ttf');
+}
+/*changing the scroll bar*/
+ ::-webkit-scrollbar {
+    width: 8px;
+    /*padding-right: 10px;*/
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 6px 0 6px teal; 
+}
+
+
+:root{
+    --theme-primary:#eee;
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+.topnav {
+    font-size: 14px; 
+}
+.nav li a{
+    transition: 0.35s;
+}
+.nav li a:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+    background-color: red;
+}
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: var(--theme-primary);
+    /*background: url(../img/hee.jpg) no-repeat center center;*/
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+.content-section,
+.contacts{
+    padding: :50px 0;
+    background-color: var(--theme-primary);
+    height: 400px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.contacts{
+    height: 500px;
+}
+.fixed-bg{
+    min-height: 30%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.top-words{
+    text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+.centered{
+    text-align: center;
+}
+.about-us{
+    background-image: url(../img/cat.jpg);
+}
+.about-us,
+.our-services,
+.our-location,
+.our-contact,
+#contact-us{
+    color: white;
+    background-image: url(../img/cat.jpg);
+    text-shadow: 0.1em 0em 0.1em grey;
+     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+.section-heading {
+    margin-bottom: 30px;
+}
+.our-home-location{
+    background-size: red;
+    height: 500px;
+    padding: 50px 0;
+}
+#map{
+    width: 100%;
+    height: 250px;
+    background-color: grey;
+}
+input,
+textarea{
+    outline: none; 
+}
+.sender-name,
+.sender-email{
+    border:none;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    height: 40px;
+    z-index: 12;
+    background-color: transparent;
+    width: 300px;
+}
+.name-lbl,
+.email-lbl{
+    position: relative;
+    top: 40px;
+    z-index: 9;
+}
+.sender-message{
+    height: 100px;
+    max-height: 100px;
+    width: 300px;
+    max-width: 300px;
+    margin-top: 10px;
+    border:none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 12;
+    background-color: transparent;
+}
+.message-lbl{
+    position: relative;
+    top: 100px;
+    z-index: 9;
+}
+.btn-send{
+    height: 30px;
+    width: 150px;
+    margin-top: 3px;
+    position: relative;
+    left: 150px; 
+}
+.social-networks li{
+    list-style: none;
+    display:block;
+    padding: 0;
+    margin-bottom: 10px;
+    width: 500px; 
+    height: 50px;
+    line-height: 50px;
+}
+.social-networks li a{
+    width: 200px;
+    transition: 0.5s;
+}
+.space{
+    width: 30px;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: right;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+    .intro-divider {
+        width: 100%;
+    }
+    .our-home-location,
+    .our-message{
+        height: 500px;
+        padding: 50px 0;
+    }
+    #map{
+        width: 85%;
+        margin: 0 auto;
+        height: 250px;
+        /*display: none;*/
+    }
+    .our-form{
+        margin-left: 40px;
+    }
+    .sender-name,
+    .sender-email{
+        height: 40px;
+        width: 250px;
+    }
+    .name-lbl,
+    .email-lbl{
+        position: relative;
+        top: 40px;
+    }
+    .sender-message{
+        height: 100px;
+        max-height: 100px;
+        width: 250px;
+        max-width: 250px;
+        margin-top: 5px;
+    }
+    .message-lbl{
+        top: 100px;
+    }
+    .btn-send{
+        width: 150px;
+        margin-top: 3px;
+        margin-bottom: 20px;
+        left: 100px; 
+    }
+    .our-home-location{
+        height: 650px !important;
+        padding: 50px 0;
+    }
+    .our-message{
+        height: 1000px !important;
+    }
+    .social-networks li{
+        margin-bottom: 3px;
+        margin-left: 40px;
+        width: 300px; 
+        height: 50px;
+        line-height: 50px;
+    }
+    .social-networks li a{
+        width: 200px;
+        transition: 0.5s;
+    }
+}
+
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .intro-message {
+        padding-bottom: 5%;
+    }
+    .intro-message > h1 {
+        font-size: 2.8em;
+    }
+    .intro-divider {
+        width: 90%;
+    }
+    .our-home-location,
+    .our-message{
+        height: 500px;
+        padding: 50px 0;
+    }
+    .content-section{
+        height: 500px;
+    }
+    #map{
+        width: 85%;
+        margin: 0 auto;
+        height: 250px;
+        /*display: none;*/
+    }
+    .our-form{
+        margin-left: 40px;
+    }
+    .sender-name,
+    .sender-email{
+        height: 40px;
+        width: 250px;
+    }
+    .name-lbl,
+    .email-lbl{
+        position: relative;
+        top: 40px;
+    }
+    .sender-message{
+        height: 100px;
+        max-height: 100px;
+        width: 250px;
+        max-width: 250px;
+        margin-top: 5px;
+    }
+    .message-lbl{
+        top: 100px;
+    }
+    .btn-send{
+        width: 150px;
+        margin-top: 3px;
+        margin-bottom: 20px;
+        left: 100px; 
+    }
+    .our-home-location{
+        height: 550px;
+        padding: 50px 0;
+    }
+    .our-message{
+        height: 900px;
+    }
+    .social-networks li{
+        margin-left: 40px;
+        width: 200px; 
+    }
+    .social-networks li a{
+        width: 150px;
+        transition: 0.5s;
+    }  
+    .middle{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+    }  
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
